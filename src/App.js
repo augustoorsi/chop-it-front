@@ -56,7 +56,7 @@ function App() {
                 <button onClick={handleChop}>Chop!</button>
             </label>
             <label>Chopped URL:
-                <input readOnly type='text' value={newURL ? `http://localhost:3000/${newURL}` : ""}></input>
+                <input readOnly type='text' value={newURL ? `https://chop-it.vercel.app/${newURL}` : ""}></input>
             </label>
         </div>
     );
