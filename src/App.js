@@ -34,7 +34,7 @@ function App() {
     }
 
     const NavToURL = (newURL) =>{
-        fetch(`https://chop-it-back.onrender.com/${newURL}`)
+        fetch(`https://chop-it-back.onrender.com${newURL}`)
         .then(res=> res.json())
         .then(data => {
             console.log(data.URL)
