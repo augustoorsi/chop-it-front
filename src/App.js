@@ -15,7 +15,7 @@ function App() {
     }
 
     const handleChop = () => {
-        fetch('http://localhost:3001/', {
+        fetch('https://chop-it-back.onrender.com/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ function App() {
     }
 
     const NavToURL = (newURL) =>{
-        fetch(`http://localhost:3001${newURL}`)
+        fetch(`https://chop-it-back.onrender.com/${newURL}`)
         .then(res=> res.json())
         .then(data => {
             console.log(data.URL)
