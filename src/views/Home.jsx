@@ -53,9 +53,13 @@ const Home = ()=>{
                 <input onChange={(event) => handleChange(event)} type='text' name='URL' value={URL}></input>
                 <button onClick={handleChop}>Chop!</button>
             </label>
-            <label>Chopped URL:
-                <input readOnly type='text' value={newURL ? `https://chop-it.vercel.app/${newURL}` : ""}></input>
-            </label>
+            {newURL? 
+                <label>Chopped URL:
+                    <input readOnly type='text' value={newURL ? `https://chop-it.vercel.app/${newURL}` : ""}></input>
+                </label>
+                :
+                null
+            }
         </div>
     );
 }
