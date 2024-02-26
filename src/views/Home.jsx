@@ -49,7 +49,6 @@ const Home = ()=>{
 
     return (
         <div className={styles.container}>
-            <h1>CHOP IT</h1>
             <label>Your URL:
                 <input onChange={(event) => handleChange(event)} type='text' name='URL' value={URL}></input>
                 <button onClick={handleChop}>Chop!</button>
